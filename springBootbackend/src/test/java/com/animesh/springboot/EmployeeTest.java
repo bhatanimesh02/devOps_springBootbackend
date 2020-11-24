@@ -42,12 +42,4 @@ public class EmployeeTest {
 		assertThat(updatedEmployee.equals(employee));
 	}
 	
-	@Test
-	public void testGetAllEmployees() {
-		List<Employee> employee = (List<Employee>)employeeRepository.findAll();
-		for(Employee emp : employee) {
-			System.out.println(emp);
-		}
-		assertThat(employee).size().isGreaterThan(0);
-	}
 }
